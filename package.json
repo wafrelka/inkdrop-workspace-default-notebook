@@ -1,0 +1,20 @@
+{
+  "name": "workspace-default-notebook",
+  "description": "Set default notebook per workspace",
+  "main": "./dist/index.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild --minify --bundle --platform=node ./src/index.ts --outfile=./dist/index.js"
+  },
+  "engines": {
+    "inkdrop": "^5.x"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "esbuild": "^0.17.5",
+    "eslint": "^8.33.0",
+    "inkdrop-model": "^2.7.1",
+    "typescript": "^4.9.5"
+  }
+}

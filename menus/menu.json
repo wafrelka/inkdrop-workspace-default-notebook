@@ -1,0 +1,8 @@
+{
+  "context-menu": {
+    ".sidebar-workspace-menu .sidebar-menu-book-list-item": [{
+      "label": "Mark as Default Notebook",
+      "command": "workspace-default-notebook:set-default"
+    }]
+  }
+}
