@@ -80,13 +80,9 @@ const setDefault = () => {
     const { books } = inkdrop.store.getState();
     const targetBookName = books.hash[menuTargetBookId]?.name || "";
     const workspaceBookName = books.hash[workspaceBookId]?.name || "";
-    inkdrop.notifications.addInfo(
-      "Workspace default notebook updated",
-      {
-        dismissable: true,
-        detail: `Default notebook for "${workspaceBookName}" is set to "${targetBookName}"`,
-      },
-    );
+    const title = "Workspace default notebook updated";
+    const detail = `"${targetBookName}" will be the default notebook of "${workspaceBookName}"`;
+    inkdrop.notifications.addInfo(title, {dismissable: true, detail});
   }
 };
 
